@@ -5,12 +5,12 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SomeService {
+public class TroublesomeService {
 
     private final RestTemplateBuilder restTemplateBuilder;
 
     @Autowired
-    public SomeService(RestTemplateBuilder restTemplateBuilder) {
+    public TroublesomeService(RestTemplateBuilder restTemplateBuilder) {
 
         this.restTemplateBuilder = restTemplateBuilder;
         this.restTemplateBuilder.build();

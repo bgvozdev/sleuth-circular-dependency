@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
 @Component
-public class TroublesomeComponent extends AbstractReactiveHealthIndicator {
+public class TroublesomeHealthIndicator extends AbstractReactiveHealthIndicator {
 
-    private final SomeService someService;
+    private final TroublesomeService someService;
 
     @Autowired
-    TroublesomeComponent(SomeService someService) {
+    TroublesomeHealthIndicator(TroublesomeService someService) {
         this.someService = someService;
     }
 
